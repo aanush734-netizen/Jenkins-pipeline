@@ -2,21 +2,21 @@ pipeline {
     agent any
 
     stages {
+        stage('pre-production') {
+            steps {
+                echo 'production...'
+            }
+        }
+
         stage('test') {
             steps {
                 echo 'testing...'
             }
         }
 
-        stage('stage') {
+        stage('deploy') {
             steps {
-                echo 'staging...'
-            }
-        }
-
-        stage('production') {
-            steps {
-                echo 'production...'
+                echo 'deploying...'
             }
         }
     }
