@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('pre-production') {
             steps {
-                echo 'production...'
+                echo 'pre-production...'
             }
         }
 
